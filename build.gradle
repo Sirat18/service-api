@@ -33,9 +33,6 @@ apply from: "$scriptsUrl/build-quality.gradle"
 apply from: "$scriptsUrl/jacoco.gradle"
 project.hasProperty('sealightsSession') && sealightsSession?.trim() ? apply(from: 'sealights.gradle') : println('No sealights session')
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
 repositories {
     mavenCentral()
     mavenLocal()
